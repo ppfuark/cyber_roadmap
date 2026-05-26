@@ -8,3 +8,19 @@
 - Wireshark:
     1. I also need to have admin permissions to install it.
  
+## Day 2 - Arch Linux install
+1. Verify network
+    ```bash
+    ping google.com
+    ````
+2. Verify updates
+    ```bash
+    pacman -Syy
+    pacman-key --init
+    pacman-key --populate archlinux
+    pacman -Sy archlinux-keyring
+    ````
+3. Install configs
+    ```bash
+    archinstall --skip-ntp --skip-wkd
+    ````
